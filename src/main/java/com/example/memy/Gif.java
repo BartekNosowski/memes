@@ -11,6 +11,8 @@ import java.util.List;
 public class Gif {
 
     private String name;
+    private boolean favorite;
+
 
     // android-explosion
     public String getFilePath(){
@@ -21,12 +23,12 @@ public class Gif {
     // STATIC służy do inicjalizacji zmiennych statycznych
     // wykonywany jest na samym poczatku uruchomienia pliku
     static {
-        GIFS.add(new Gif("android-explosion"));
-        GIFS.add(new Gif("ben-and-mike"));
-        GIFS.add(new Gif("book-dominos"));
-        GIFS.add(new Gif("compiler-bot"));
-        GIFS.add(new Gif("cowboy-coder"));
-        GIFS.add(new Gif("infinite-andrew"));
+        GIFS.add(new Gif("android-explosion",false));
+        GIFS.add(new Gif("ben-and-mike",true));
+        GIFS.add(new Gif("book-dominos",true));
+        GIFS.add(new Gif("compiler-bot",false));
+        GIFS.add(new Gif("cowboy-coder",false));
+        GIFS.add(new Gif("infinite-andrew",true));
     }
 
 
