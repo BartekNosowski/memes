@@ -14,6 +14,7 @@ public class Gif {
     private boolean favorite;
 
 
+
     // android-explosion
     public String getFilePath(){
         return "/gifs/"+name+".gif";
